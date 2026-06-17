@@ -5,10 +5,10 @@
       "use": "@vercel/rust"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/api/weather"
+      "source": "/api/weather",
+      "destination": "/api/weather.rs"
     }
   ]
 }
