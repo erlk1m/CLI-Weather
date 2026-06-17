@@ -17,5 +17,11 @@
       "src": "*.js",
       "use": "@vercel/static"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/weather",
+      "destination": "/api/weather.rs"
+    }
   ]
 }
