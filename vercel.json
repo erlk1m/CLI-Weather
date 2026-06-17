@@ -1,14 +1,21 @@
 {
+  "framework": null,
   "builds": [
     {
       "src": "api/**/*.rs",
       "use": "@vercel/rust"
-    }
-  ],
-  "rewrites": [
+    },
     {
-      "source": "/api/weather",
-      "destination": "/api/weather.rs"
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
     }
   ]
 }

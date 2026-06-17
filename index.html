@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLI Weather Terminal</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="animated-bg"></div>
     <div class="crt-overlay"></div>
+    
     <div class="terminal-container">
         <div class="terminal-header">
             <div class="buttons">
@@ -16,13 +18,11 @@
                 <span class="minimize"></span>
                 <span class="maximize"></span>
             </div>
-            <div class="title">user@weather-cli:~</div>
+            <div class="title">weather-cli — bash — 80x24</div>
         </div>
         <div class="terminal-body" id="terminal-body">
-            <div class="output">
-                <span class="sys-msg">Welcome to CLI Weather Terminal v1.0.0</span><br>
-                <span class="sys-msg">Type a city name to get the weather forecast (e.g. 'Jakarta' or 'Bandung').</span><br>
-                <span class="sys-msg">Type 'clear' to clear the screen.</span><br><br>
+            <div class="output" id="output">
+                <!-- Content injected via JS -->
             </div>
             <div class="input-line">
                 <span class="prompt">root@weather-cli:~$ </span>
